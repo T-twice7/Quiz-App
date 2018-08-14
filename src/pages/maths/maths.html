@@ -1,0 +1,117 @@
+<!--
+  Generated template for the MathsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>MATHS</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="head">
+    <h1>MATHS</h1>
+    <blockquote>Each question consist of three options:<br><i>Scroll and choose only one option!</i><br>
+      Press next when you Done!
+    </blockquote>
+    <button class="btn1" ion-button (click)="proceed()">Next</button>
+</div>
+              <div class="field">
+              <fieldset >
+                  <legend>QUESTION1</legend>
+                  <h4>20<sup>2</sup>=</h4>
+                  <ion-item>
+                      <ion-label>400</ion-label>
+                      <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                    </ion-item>
+                  
+                    <ion-item>
+                      <ion-label>200</ion-label>
+                      <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                    </ion-item>
+                  
+                    <ion-item>
+                      <ion-label>40</ion-label>
+                      <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                    </ion-item>
+                    </fieldset>
+                    <fieldset >
+                        <legend>QUESTION2</legend>
+                        <h4>x<sup>2</sup>-2x+1=</h4>
+                        <ion-item>
+                            <ion-label>(x-1)(x-1)</ion-label>
+                            <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                          </ion-item>
+                        
+                          <ion-item>
+                            <ion-label>(x+1)(x-1)</ion-label>
+                            <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                          </ion-item>
+                        
+                          <ion-item>
+                            <ion-label>(x+1)(x-2)</ion-label>
+                            <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                          </ion-item>
+                          </fieldset>
+                          <fieldset >
+                              <legend>QUESTION3</legend>
+                              <h4>20% of 2 is equal to</h4>
+                              <ion-item>
+                                  <ion-label>20</ion-label>
+                                  <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                </ion-item>
+                              
+                                <ion-item>
+                                  <ion-label>0.04</ion-label>
+                                  <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                                </ion-item>
+                              
+                                <ion-item>
+                                  <ion-label>0.4</ion-label>
+                                  <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                </ion-item>
+                                </fieldset>
+                                <fieldset >
+                                    <legend>QUESTION4</legend>
+                                    <h4>-10+(-10)=</h4>
+                                    <ion-item>
+                                        <ion-label>20</ion-label>
+                                        <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                      </ion-item>
+                                    
+                                      <ion-item>
+                                        <ion-label>-20</ion-label>
+                                        <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                                      </ion-item>
+                                    
+                                      <ion-item>
+                                        <ion-label>0</ion-label>
+                                        <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                      </ion-item>
+                                      </fieldset>
+                                      <fieldset >
+                                          <legend>QUESTION5</legend>
+                                          <h4>5-(-5) =</h4>
+                                          <ion-item>
+                                              <ion-label>0</ion-label>
+                                              <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                            </ion-item>
+                                          
+                                            <ion-item>
+                                              <ion-label>-10</ion-label>
+                                              <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                            </ion-item>
+                                          
+                                            <ion-item>
+                                              <ion-label>10</ion-label>
+                                              <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                                            </ion-item>
+                                            </fieldset>
+                
+          </div>
+</ion-content>

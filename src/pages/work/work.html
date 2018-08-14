@@ -1,0 +1,116 @@
+<!--
+  Generated template for the WorkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>WORK</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="head">
+    <h1>WORK</h1>
+    <blockquote>Each question consist of three options:<br><i>Scroll and choose only one option!</i><br>
+      Press next when you Done!
+    </blockquote>
+    <button class="btn1" ion-button (click)="proceed()">Next</button>
+</div>
+          <div class="field">
+              <fieldset >
+                  <legend>QUESTION1</legend>
+                  <h4>How many hours are preferable to work for a day?</h4>
+                  <ion-item>
+                      <ion-label >8 hours</ion-label>
+                      <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                    </ion-item>
+                  
+                    <ion-item>
+                      <ion-label>12 hours</ion-label>
+                      <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                    </ion-item>
+                  
+                    <ion-item>
+                      <ion-label >10 hours</ion-label>
+                      <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                    </ion-item>
+                    </fieldset>
+                    <fieldset >
+                        <legend>QUESTION2</legend>
+                        <h4>Which salary would you prefer as your starting basic?</h4>
+                        <ion-item>
+                            <ion-label>R4500</ion-label>
+                            <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                          </ion-item>
+                        
+                          <ion-item>
+                            <ion-label>R5500</ion-label>
+                            <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                          </ion-item>
+                        
+                          <ion-item>
+                            <ion-label>R7000</ion-label>
+                            <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                          </ion-item>
+                          </fieldset>
+                          <fieldset >
+                              <legend>QUESTION3</legend>
+                              <h4>How do you prefer to work?</h4>
+                              <ion-item>
+                                  <ion-label>Alone</ion-label>
+                                  <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                </ion-item>
+                              
+                                <ion-item>
+                                  <ion-label>With a group</ion-label>
+                                  <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                </ion-item>
+                              
+                                <ion-item>
+                                  <ion-label>With a friend</ion-label>
+                                  <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                                </ion-item>
+                                </fieldset>
+                                <fieldset >
+                                    <legend>QUESTION4</legend>
+                                    <h4>How long would you stay in a work place?</h4>
+                                    <ion-item>
+                                        <ion-label>2-3 years</ion-label>
+                                        <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                      </ion-item>
+                                    
+                                      <ion-item>
+                                        <ion-label>6months-1year</ion-label>
+                                        <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                      </ion-item>
+                                    
+                                      <ion-item>
+                                        <ion-label>2-4years</ion-label>
+                                        <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                                      </ion-item>
+                                      </fieldset>
+                                      <fieldset >
+                                          <legend>QUESTION5</legend>
+                                          <h4>Which intended job you prefer?</h4>
+                                          <ion-item>
+                                              <ion-label>Part time</ion-label>
+                                              <ion-checkbox *ngIf="select" (click)="show()"></ion-checkbox>
+                                            </ion-item>
+                                          
+                                            <ion-item>
+                                              <ion-label>Full time</ion-label>
+                                              <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                            </ion-item>
+                                          
+                                            <ion-item>
+                                              <ion-label>Weekends Only</ion-label>
+                                              <ion-checkbox *ngIf="wrong" (click)="countS()"></ion-checkbox>
+                                            </ion-item>
+                                            </fieldset>  
+      </div>
+</ion-content>

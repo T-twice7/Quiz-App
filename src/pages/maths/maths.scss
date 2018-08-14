@@ -1,0 +1,66 @@
+page-maths {
+    div.scroll-content{
+        background-color: azure;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        div.head{
+            border: 4px outset aliceblue;
+            background-color: darkgray;
+            h1{
+                text-align: center;
+                font-family: fantasy;
+                text-shadow: 0 0 4px white;
+                font-weight: bolder;
+            }
+            blockquote{
+
+                font-family: cursive;
+
+                i{
+                    font-weight: bolder;
+                }
+            }
+            
+            button{
+                float: right;
+                background-color: black;
+                border-radius: 3em 2em 3em 2em/3em 2em 3em 2em;
+
+            }
+
+        }
+        
+        div.field{
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            overflow-x: hidden;
+        align-items: center;
+        height: 300px;
+        
+            fieldset{
+                position: relative;
+                background-color: gray;
+                border: none;
+                margin: 5px;
+                border-radius: 10px;
+
+                h4{
+                    font-family: serif;
+                }
+                ion-item{
+                    background-color: darkgray;
+                    border: 4px outset aliceblue;
+                }
+                ion-label{
+                    font-family: initial;
+                }
+                
+
+            }
+        }
+    }
+}

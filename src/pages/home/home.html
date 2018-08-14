@@ -1,0 +1,26 @@
+
+
+<ion-content padding>
+    
+  <div class="h">
+      <h1>WELCOME TO QUIZ APP</h1>
+    <blockquote class="b">Our quiz is a simple questionnaire<br>
+      of which it's a multiple choice of questions and<br>
+      you have 3 options to choose from.
+    </blockquote>
+    <p>Below is a list of our Quiz category:<br>
+      </p>
+      <button ion-button small (click)="select()" round color="light" class="btn" *ngIf="!hide">{{ hide? '':'Show'}}</button>
+      <ul *ngIf="hide">
+          <li >General</li><q >Here it will be just general qustions</q>
+          <li>Education</li><q>Here it will be just qustions about Education </q>
+          <li >Maths</li><q >Here it's Maths qustions</q>
+          <!-- <li >Technology</li><q >Here it's Technology qustions</q> -->
+          <li >Work</li><q >Here it will be just work related qustions</q>
+        </ul>
+        <blockquote class="b">Before you start answering<br><strong><i>Note:</i></strong><b>A correct answer is 1Point</b>
+        </blockquote>
+        <button ion-button (click)="show()">BEGIN</button>
+  </div>
+  <!-- <q>Here it will be just general qustions about you</q> -->
+</ion-content>
